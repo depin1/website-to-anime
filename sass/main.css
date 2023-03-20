@@ -1,0 +1,239 @@
+.imagenav:hover {
+  animation: anime2 ease-in 1s 10 alternate;
+  transition: 0.1s;
+}
+
+.nav_menu {
+  display: flex;
+  -moz-column-gap: 24px;
+       column-gap: 24px;
+  cursor: pointer;
+  color: rgb(0, 0, 0);
+}
+
+.i1,
+.i2,
+.i3 {
+  transition: 0.3s;
+}
+
+.i1:hover {
+  color: rgba(25, 0, 255, 0.477);
+  transform: scale(1.1);
+  text-decoration-line: underline;
+}
+
+.i2:hover {
+  color: rgba(34, 0, 255, 0.477);
+  transform: scale(1.1);
+  text-decoration-line: underline;
+}
+
+.i3:hover {
+  color: rgba(30, 0, 255, 0.477);
+  transform: scale(1.1);
+  text-decoration-line: underline;
+}
+
+.header_nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav_right {
+  display: flex;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.register_menu {
+  background-color: blue;
+  padding: 10px 20px;
+  color: aliceblue;
+  border: none;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.register_menu:hover {
+  background-color: aliceblue;
+  color: black;
+  transform: scale(1.1);
+  border: 1px solid black;
+}
+
+nav {
+  padding: 20px 0;
+}
+
+nav {
+  background-image: url(../images/baground2.jpg);
+  min-height: 870px;
+  background-size: cover;
+  animation: anime ease 8s alternate-reverse 20;
+  transition: 0.1s;
+  position: relative;
+}
+
+.btn2 {
+  background-color: transparent;
+  border: none;
+  display: flex;
+  -moz-column-gap: 5px;
+       column-gap: 5px;
+  align-items: center;
+}
+
+.clickme {
+  font-size: 20px;
+  color: rgb(22, 22, 22);
+  transition: 0.2s;
+  z-index: 10;
+}
+
+.clickme:hover {
+  color: blue;
+  text-decoration-line: underline;
+}
+
+.header_end {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+.naruto {
+  max-width: 450px;
+}
+
+.header__end-lef {
+  max-width: 630px;
+}
+
+.title_japan {
+  font-weight: 700;
+  font-size: 100px;
+  color: rgb(255, 238, 0);
+}
+
+.text_nav {
+  font-size: 30px;
+  margin-top: 20px;
+  color: rgb(214, 22, 22);
+}
+
+.imagenav {
+  width: 50px;
+  border-radius: 40%;
+  animation: anime2 ease-in-out 1s 10 alternate;
+  transition: 0.2s;
+  position: relative;
+  z-index: 10;
+}
+
+@media (max-width: 576px) {
+  .nav {
+    background-position: center;
+  }
+  .nav_right {
+    display: none;
+  }
+  .nav_right.active {
+    width: 100%;
+    height: 900px;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.715);
+    display: block;
+    left: 0;
+    padding: 250px 0 0 0;
+    top: 0;
+  }
+  .clickme {
+    color: blue;
+  }
+  .nav_menu {
+    flex-direction: column;
+    row-gap: 34px;
+    align-items: center;
+  }
+  .nav__menu-item {
+    color: blue;
+  }
+  .for_btn {
+    text-align: center;
+    margin-top: 50px;
+  }
+}
+@media (max-width: 786px) {
+  .header_end {
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+    row-gap: 40px;
+  }
+}
+@keyframes anime {
+  0% {
+    background-image: url(../images/baground2.jpg);
+    background-position: center;
+  }
+  50% {
+    background-image: url(../images/baground3.jpg);
+    background-position: center;
+  }
+  100% {
+    background-image: url(../images/bagroun4.jpg);
+    background-position: center;
+  }
+}
+@keyframes anime2 {
+  0% {
+    transform: rotate(0);
+  }
+  50% {
+    transform: rotate(30deg);
+  }
+  100% {
+    transform: rotate(-30deg);
+  }
+}
+/* abhaya-libre-regular - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Abhaya Libre";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/abhaya-libre-v13-latin-regular.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/abhaya-libre-v13-latin-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/abhaya-libre-v13-latin-regular.woff2") format("woff2"), url("../fonts/abhaya-libre-v13-latin-regular.woff") format("woff"), url("../fonts/abhaya-libre-v13-latin-regular.ttf") format("truetype"), url("../fonts/abhaya-libre-v13-latin-regular.svg#AbhayaLibre") format("svg");
+  /* Legacy iOS */
+}
+/* abhaya-libre-700 - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Abhaya Libre";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/abhaya-libre-v13-latin-700.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/abhaya-libre-v13-latin-700.eot?#iefix") format("embedded-opentype"), url("../fonts/abhaya-libre-v13-latin-700.woff2") format("woff2"), url("../fonts/abhaya-libre-v13-latin-700.woff") format("woff"), url("../fonts/abhaya-libre-v13-latin-700.ttf") format("truetype"), url("../fonts/abhaya-libre-v13-latin-700.svg#AbhayaLibre") format("svg");
+  /* Legacy iOS */
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1240px;
+  padding: 0 20px;
+  margin: 0 auto;
+}/*# sourceMappingURL=main.css.map */
